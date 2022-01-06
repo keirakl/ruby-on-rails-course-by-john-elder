@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :friends
+  resources :friends #this handles CRUD related routes: show/edit/delete/create friends
+  
   # get 'home/index'
   get 'home/about'
   root 'home#index'

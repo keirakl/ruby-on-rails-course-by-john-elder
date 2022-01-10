@@ -11,32 +11,31 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
-  </div>
+  <form>
+    <div class="my-3">
+      <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+    </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
-  </div>
+    <div class="my-3">
+      <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
+    </div>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
+    <div class="my-3">
+      <%= form.text_field :email, class: "form-control", placeholder: "Email" %>
+    </div>
 
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
-  </div>
+    <div class="my-3">
+      <%= form.text_field :phone, class: "form-control", placeholder: "Phone" %>
+    </div>
 
-  <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
-  </div>
+    <div class="my-3">
+      <%= form.text_field :twitter, class: "form-control", placeholder: "Twitter" %>
+    </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+    <div class="my-3">
+      <%= form.submit class: "btn btn-secondary" %>
+    </div>
+
+  </form>
+
 <% end %>
